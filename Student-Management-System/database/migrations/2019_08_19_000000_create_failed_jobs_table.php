@@ -15,11 +15,11 @@ class CreateFailedJobsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $tabel->string('cne');
-            $tabel->string('firstName');
-            $tabel->string('lastName');
-            $tabel->integer('age');
-            $tabel->string('speciality');
+            $table->string('cne');
+            $table->string('firstName');
+            $table->string('lastName');
+            $table->integer('age');
+            $table->string('speciality');
             $table->timestamps();
         });
     }
@@ -31,6 +31,6 @@ class CreateFailedJobsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('failed_jobs');
+        Schema::dropIfExists('students');
     }
 }

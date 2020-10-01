@@ -1,4 +1,9 @@
-<div class="col">
+<div class="card mb-3">
+  
+  <div class="card-body">
+    <h5 class="card-title">All Students</h5>
+    <p class="card-text">All students in management system</p>
+    <div class="col">
     <table class="table table-dark">
     <thead>
         <tr>
@@ -24,4 +29,6 @@
     @endforeach
     </tbody>
     </table>
+</div>
+  </div>
 </div>
